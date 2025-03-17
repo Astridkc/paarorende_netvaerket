@@ -26,17 +26,17 @@ img {
   --bold: 700;
 
   /*størrele*/
-  --h1dsize: 7.667rem;
-  --h1msize: 3.75rem;
+  --h1dsize: 92px;
+  --h1msize: 45px;
 
-  --h2dsize: 6.25rem;
-  --h2msize: 3.167rem;
+  --h2dsize: 75px;
+  --h2msize: 38px;
 
-  --h3dsize: 2.25rem;
-  --h3msize: 1.583rem;
+  --h3dsize: 27px;
+  --h3msize: 19px;
 
-  --pdsize: 1.667rem;
-  --pmsize: 1.333rem;
+  --pdsize: 20px;
+  --pmsize: 16px;
 }
 
 /************ Fonte *************
