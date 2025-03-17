@@ -1,0 +1,117 @@
+/*********reset*******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/********** variabler **********/
+:root {
+  /*farver*/
+  --primary: #fdfbf1;
+  --secondary: #082c44;
+  --accent1: #fde48a;
+  --accent2: #61c6bb;
+
+  /*font*/
+  --h1h2font: "Josefin Sans", sans-serif;
+  --h3p: "Jost", sans-serif;
+
+  /*font-weight*/
+  --bold: 700;
+
+  /*størrele*/
+  --h1dsize: 7.667rem;
+  --h1msize: 3.75rem;
+
+  --h2dsize: 6.25rem;
+  --h2msize: 3.167rem;
+
+  --h3dsize: 2.25rem;
+  --h3msize: 1.583rem;
+
+  --pdsize: 1.667rem;
+  --pmsize: 1.333rem;
+}
+
+/************ Fonte *************
+.josefin-sans-<uniquifier> {}
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.jost-<uniquifier> {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+******************************/
+
+/************ style **************/
+body {
+  background-color: var(--primary);
+}
+
+/* fonts */
+h1 {
+  color: var(--secondary);
+  font-family: var(--h1h2font);
+  font-size: var(--h1msize);
+  font-weight: var(--bold);
+}
+
+h2 {
+  color: var(--secondary);
+  font-family: var(--h1h2font);
+  font-size: var(--h2msize);
+  font-weight: var(--bold);
+}
+
+h3 {
+  color: var(--secondary);
+  font-family: var(--h3p);
+  font-size: var(--h3msize);
+  font-weight: var(--bold);
+}
+
+p {
+  color: var(--secondary);
+  font-family: var(--h3p);
+  font-size: var(--pmsize);
+}
+
+/*********** layout **************/
+main {
+  max-width: 1400px;
+  margin-inline: auto;
+  margin: 1rem;
+}
+
+@media (min-width: 600px) {
+  /* fonts */
+  h1 {
+    font-size: var(--h1dsize);
+  }
+  h2 {
+    font-size: var(--h2dsize);
+  }
+  h3 {
+    font-size: var(--h3dsize);
+  }
+  p {
+    font-size: var(--pdsize);
+  }
+
+  /**layout**/
+  main {
+    margin: 3rem;
+  }
+}
