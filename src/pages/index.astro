@@ -1,6 +1,12 @@
 ---
 import "../styles/style.css";
 import "../styles/menu.css";
+import Hero from "../components/Hero.astro"
+import Infosection from "../components/Infosection.astro"
+import Citatsection from "../components/Citatsection.astro"
+import Formsection from "../components/Formsection.astro"
+import Faqsection from "../components/Faqsection.astro"
+import Footer from "../components/Footer.astro"
 ---
 <!doctype html>
 <html lang="da">
@@ -19,29 +25,24 @@ import "../styles/menu.css";
 
     </head>
     <body>
-	<header>
-		      <div class="logo">
-            <a href="">
-                <img src="" alt="logo">
+		<Hero/>
 
-            </a>
-        </div>
-      
-        <nav>
-
-
-            <ul class="menu">
-                <li><a href="index.html">ANSØG</a></li>
- <li><a href="index.html">FAQ</a></li>
-            </ul>
-
-        </nav>
-	</header>
 	<main>
+			<Infosection/>
+			<Citatsection/>
+			<Formsection/>
+			<Faqsection/>
+		
+			
+
+
+
 
 	
 	</main>
-	<footer></footer>
+	<footer>
+		<Footer/>
+	</footer>
       
     </body>
     
