@@ -1,6 +1,39 @@
 ---
-import FaqItem from "./FaqItem.astro";
+import FaqList from "./FaqList.astro";
 ---
 
-<FaqItem title="Yo" text="Test" />
-<FaqItem title="Yo" text="Test" />
+<section>
+  <h2>FAQ</h2>
+  <FaqList />
+</section>
+
+<style>
+  section {
+    background-color: var(--accent1);
+    padding: 5rem 2rem 5rem 2rem;
+    margin: -1rem;
+  }
+
+  h2 {
+    font-size: 110px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+  }
+
+  @media (min-width: 600px) {
+    section {
+      margin: -3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 5rem 0rem 5rem 5rem;
+      margin-top: 3rem; /* slet evt. hvis det ikke skal bruges! + tilføj hvis mobil*/
+    }
+
+    h2 {
+      order: 2;
+      padding-bottom: 0rem;
+      margin: auto;
+    }
+  }
+</style>
