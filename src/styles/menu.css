@@ -10,8 +10,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: transparent;
+  padding: 7px 30px 7px 30px;
+  background-color: var(--secondary);
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 
 .logo img {
@@ -49,6 +52,20 @@ nav {
   transition: color 0.3s;
   text-align: end;
   font-family: var(--h1h2font);
+  font-size: var(--pmsize);
+}
 
-  font-size: 20px;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 800px) {
+  .menu a {
+    font-size: var(--pdsize);
+  }
+
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
 }
