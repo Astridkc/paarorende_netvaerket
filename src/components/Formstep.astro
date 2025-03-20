@@ -1,0 +1,24 @@
+---
+const header = Astro.props.header;
+---
+
+<div class="step">
+    <p>{header}</p>
+</div>
+
+<style>
+    .step p {
+  width: 70px; 
+  height: 70px;
+  background-color: #61C6BB; 
+  font-family: "Jost", sans-serif;
+  color: #082c44; 
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+  float: right;
+}
+</style>

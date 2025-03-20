@@ -1,0 +1,109 @@
+---
+import Formtilmeldknap from "./Formtilmeldknap.astro"
+import Formstep from "./Formstep.astro"
+---
+
+ <div class="ansog">
+    <Formstep header="2"/>
+    <h2>ANSØG</h2>
+    <div class="body">
+    <div class="form_container">
+        <form>
+            <div class="form_group">
+                <select>
+                    <option value="">Jeg søger til tilbuddet</option>
+                    <option value="samtaleforlob">Samtaleforløb</option>
+                    <option value="akutradgivning">Akutrådgivning</option>
+                    <option value="gruppeforlob">Gruppeforløb</option>
+                </select>
+                <input type="text" placeholder="Fornavn *">
+            </div>
+            <div class="form_group">
+                <input type="text" placeholder="Efternavn *">
+                <input type="text" placeholder="Mellemnavn">
+            </div>
+            <div class="form_group">
+                <input type="text" placeholder="Fødselsår *">
+                <input type="text" placeholder="Adresse *">
+            </div>
+            <div class="form_group">
+                <input type="text" placeholder="By *">
+                <input type="email" placeholder="E-mail *">
+            </div>
+            <div class="form_group">
+                <input type="tel" placeholder="Mobil *">
+                <input type="text" placeholder="Nuværende beskæftigelse">
+            </div>
+            <div class="form_group">
+                <input type="text" placeholder="Uddannelsesmæssig baggrund">
+                <input type="text" placeholder="Hvorfra har du hørt om os?">
+            </div>
+             <div class="file_upload">
+                <label>Upload ansøgning her (.pdf, .doc, .docx) *</label>
+                <input type="file">
+            </div>
+            <div class="file_upload">
+                <label>Upload CV her (.pdf, .doc, .docx) *</label>
+                <input type="file">
+            </div>
+        </form>
+    </div>
+    </div>
+      <Formtilmeldknap />
+</div>
+
+ 
+
+
+  <style>
+    .ansog {
+        padding: 2rem;
+    }
+       .body {
+            padding-bottom: 2rem;
+        }
+        .form_container {
+            background: #fdfbf1;
+            padding: 10px;
+            padding-top: 20px;
+        }
+        .form_group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .form_group input,
+        .form_group select {
+            font-family: "Jost", sans-serif;
+            color: #082c44;
+            background-color: #fdfbf1;
+            flex: 1;
+            min-width: 45%;
+            padding: 6px;
+            border: 1.4px solid #082c44;
+            border-radius: 4px;
+        }
+        .full_width {
+            width: 100%;
+        }
+         .file_upload {
+            margin-top: 15px;
+            width: 102%;
+        }
+         .file_upload input {
+            width: 98%;
+            padding: 8px;
+            border: 1.4px solid #082c44;
+            font-family: "Jost", sans-serif;
+            border-radius: 4px;
+            background-color: #fdfbf1;
+            cursor: pointer;
+        }
+        .file_upload label {
+            font-family: "Jost", sans-serif;
+            color: #082c44;
+            display: block;
+            margin-bottom: 7px;
+        }
+    </style> 

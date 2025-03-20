@@ -1,0 +1,24 @@
+---
+import Formfrivillig from "./Formfrivillig.astro"
+import Formansog from "./Formansog.astro"
+---
+
+
+ <div id="ansøg" class="form_grid">
+      <Formfrivillig />
+      <Formansog />
+</div>
+
+
+      <style>
+        .form_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 2%;
+        }
+        @media (max-width: 800px) {
+        .form_grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 2%;
+      </style>
