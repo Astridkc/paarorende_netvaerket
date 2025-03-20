@@ -1,21 +1,111 @@
 ---
-import Citat from "./Citater.astro";
+
 ---
 
-<div>
-  <Citat p="Ciiiitat" />
-</div>
+<section>
+  <div class="citat1">
+    <img src="quote.svg" alt="gåseøjne" />
+    <p><br />Jeg oplever at vi har et trygt og omsorgsfuldt fællesskab, med samhørighed, forståelse og plads til forskelligheder. Det er altid mulighed for at række ud til andre, hvis jeg har behov for sparring.</p>
+  </div>
+  <div class="citat2">
+    <img src="quote.svg" alt="gåseøjne" />
+    <p><br /> Jeg kan mærke at jeg gør en forskel, bare ved at snakke i 15 minuttermed en person.</p>
+  </div>
+  <div class="citat3">
+    <img src="quote.svg" alt="gåseøjne" />
+    <p>De erfaringer jeg kan tage med mig, er klart med til at styrke og udvikle mig både personligt og professionelt. Er være frivillig = win win</p>
+  </div>
+</section>
 <style>
-  div {
+  section {
     background-color: var(--accent2);
     height: 42.5rem;
-    margin: 0;
+    margin: -2rem;
+    margin-top: 10rem;
+    position: relative;
+    margin-bottom: 9rem;
   }
+  .citat1 {
+    width: 350px; /* Justér størrelsen efter behov */
+    height: 350px;
+    background-color: var(--secondary); /* Brug en farve fra dine variabler */
+    border-radius: 50%; /* Gør den rund */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: -20%;
+    margin-left: 3rem;
+  }
+  p {
+    color: var(--primary);
+    font-family: var(--h3p);
+    font-size: 16px;
+  }
+  img {
+    width: 15%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+  }
+  .citat2 {
+    width: 220px; /* Justér størrelsen efter behov */
+    height: 220px;
+    background-color: var(--secondary); /* Brug en farve fra dine variabler */
+    border-radius: 50%; /* Gør den rund */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    margin-left: 2rem;
+  }
+  .citat3 {
+    width: 300px; /* Justér størrelsen efter behov */
+    height: 300px;
+    background-color: var(--secondary); /* Brug en farve fra dine variabler */
+    border-radius: 50%; /* Gør den rund */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 70%;
+    right: 35%;
+    margin-left: 2rem;
+  }
+
   @media (min-width: 600px) {
-    div {
+    section {
+      margin: -3rem;
+      margin-top: 9rem;
+      margin-bottom: 15rem;
     }
-    main {
-      margin: 0rem;
+    p {
+      font-size: 20px;
+    }
+    .citat1 {
+      width: 400px; /* Justér størrelsen efter behov */
+      height: 400px;
+
+      top: -20%;
+      margin-left: 20rem;
+    }
+    .citat2 {
+      width: 270px; /* Justér størrelsen efter behov */
+      height: 270px;
+      right: 20%;
+    }
+    .citat3 {
+      width: 370px; /* Justér størrelsen efter behov */
+      height: 370px;
+      right: 50%;
     }
   }
 </style>
