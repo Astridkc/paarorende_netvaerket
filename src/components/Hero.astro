@@ -5,7 +5,7 @@ import Knap from "./HeroKnap.astro";
 
 <header>
   <div class="logo">
-    <a href="">
+    <a href="#">
       <img src="logo.svg" alt="logo" />
     </a>
   </div>
@@ -14,9 +14,9 @@ import Knap from "./HeroKnap.astro";
 
 <!-- <img src="hero_illu.svg" alt="illustration" /> -->
 <section>
-  <div>
+  <div class="padding">
     <h1>ER DET DIG <br /> VI SØGER?</h1>
-    <h3>Bliv frivillig rådgiver hos misbrugsportalen,<br /> og gør en forskel for udsatte pårørende.</h3>
+    <h3>Bliv <span class="understreget">frivillig rådgiver</span> hos misbrugsportalen,<br /> og gør en forskel for udsatte pårørende.</h3>
     <Knap />
   </div>
   <div>
@@ -25,12 +25,6 @@ import Knap from "./HeroKnap.astro";
 </section>
 
 <style>
-  header {
-    background-color: transparent;
-    position: fixed;
-    z-index: 3000;
-  }
-
   section {
     background-color: var(--secondary);
     position: relative;
@@ -59,23 +53,35 @@ import Knap from "./HeroKnap.astro";
     bottom: -1%;
     left: 30%;
   }
-  @media (min-width: 600px) {
+
+  .understreget {
+    text-decoration: underline;
+  }
+  @media (min-width: 800px) {
     h1 {
       font-size: var(--h1dsize);
     }
     section {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      padding-bottom: 0rem;
+      padding-top: 4rem;
+      padding-bottom: 12rem;
     }
     .illustration {
-      position: static;
+      position: absolute;
+      top: -16%;
+      left: 59%;
       aspect-ratio: 355/1038;
       width: 22.1875rem;
       height: 64.875rem;
       display: block;
       margin: 0;
       padding: 0;
+      transform: scale(0.9);
+    }
+
+    .padding {
+      padding-left: 3rem;
     }
   }
 </style>
