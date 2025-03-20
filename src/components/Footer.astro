@@ -1,0 +1,65 @@
+---
+import Opening from "./Opening.astro";
+import IconText from "./IconText.astro";
+---
+
+<section>
+  <div class="opening">
+    <Opening />
+  </div>
+  <div class="some">
+    <IconText text="Spred budskabet!">
+      <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-forward"><polyline points="15 17 20 12 15 7"></polyline><path d="M4 18v-2a4 4 0 0 1 4-4h12"></path></svg> </a>
+    </IconText>
+    <div class="icons">
+      <a href="https://www.facebook.com/misbrugsportalen/?ref=page_internal"> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg> </a>
+      <a href="https://www.instagram.com/misbrugsportalen/?hl=da"> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg> </a>
+      <a href="mailto:mail@misbrugsportalen.dk"> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg> </a>
+    </div>
+    <p>Copyright @ https://www.misbrugsportalen.dk/</p>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--secondary);
+    padding: 4rem 2rem 2rem 2rem;
+  }
+
+  p {
+    color: var(--accent2);
+    font-size: 13px;
+  }
+
+  .icons {
+    display: flex;
+    gap: 0.7rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  @media (min-width: 800px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 4rem 2rem 1rem 4rem;
+    }
+
+    .some {
+      order: -1;
+    }
+
+    .opening {
+      margin: auto;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .icons {
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+  }
+</style>
