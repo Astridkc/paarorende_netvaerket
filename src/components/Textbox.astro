@@ -16,6 +16,7 @@ const text = Astro.props.text;
 h2{
     font-family: var( --h1h2font);
    font-size: var(--h2msize); 
+   padding-bottom: 1rem;
    
 }
 
@@ -23,11 +24,34 @@ h3{
     font-family: var( --h1h2font);
     font-size: var(--h3msize);
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .text_box_info{
     padding: 2rem;
 }
+
+
+@media (min-width: 600px) {
+    h2{
+   font-size: var(--h2dsize); 
+   padding-bottom: 1rem;
+   margin-top: 4rem;
+   
+}
+
+h3{
+    font-size: var(--h3dsize);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.text_box_info{
+    padding: 0rem;
+}
+}
+
 
 
 

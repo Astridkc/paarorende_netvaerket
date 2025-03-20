@@ -2,19 +2,44 @@
 import Textbox from "../components/Textbox.astro"
 ---
 
-
-
-<Textbox header="BLIV FRIVILLIG RÅDGIVER!" text="GØR EN FORSKEL FOR PÅRØRENDE TIL MISBRUGSRAMTE">
-        <p>Vil du være med til at skabe meningsfuld forandring? Pårørende Netværket Misbrugsportalen søger engagerede frivillige rådgivere, der vil støtte pårørende til mennesker med misbrugsproblematikker uanset om det drejer sig om alkohol-, stof- eller medicinmisbrug.</p>
-                <p >Brug din erfaring til at hjælpe andre. Har du selv erfaring som tidligere misbrugsramt eller pårørende? Din forståelse kan gøre en stor forskel for andre. Vores frivillige tilbyder samtalestøtte via vores akuttelefon, i telefoniske forløb og som gruppeledere i online samtalegrupper.</p>
-<p >Bliv en del af et stærkt fællesskab. Som frivillig får du en grundig oplæring og en mentor, der klæder dig på til rollen. Du bliver en del af et fagligt og støttende netværk af social- og sundhedsfaglige, terapeuter, tidligere pårørende og misbrugskonsulenter.</p>
+<section class="info_text1">
+    <div class="yellow-grid">
+        <div class="yellow_box"></div>
+        <div class="text_1">
+            <img class="hugging_art" src="hugging.svg" alt="hugging">  
+            <Textbox header="BLIV FRIVILLIG RÅDGIVER!" text="GØR EN FORSKEL FOR PÅRØRENDE TIL MISBRUGSRAMTE">
+                <p><strong>Vil du være med til at skabe meningsfuld forandring?</strong> Pårørende Netværket Misbrugsportalen søger engagerede frivillige rådgivere, der vil støtte pårørende til mennesker med misbrugsproblematikker uanset om det drejer sig om alkohol-, stof- eller medicinmisbrug.</p>
+                <p><strong>Brug din erfaring til at hjælpe andre.</strong> Har du selv erfaring som tidligere misbrugsramt eller pårørende? Din forståelse kan gøre en stor forskel for andre. Vores frivillige tilbyder samtalestøtte via vores akuttelefon, i telefoniske forløb og som gruppeledere i online samtalegrupper.</p>
+                <p> <strong>Bliv en del af et stærkt fællesskab.</strong> Som frivillig får du en grundig oplæring og en mentor, der klæder dig på til rollen. Du bliver en del af et fagligt og støttende netværk af social- og sundhedsfaglige, terapeuter, tidligere pårørende og misbrugskonsulenter.</p>
             </Textbox>
+        </div>
+    </div>
+</section>
 
 
-<Textbox header="LANDET OVER " text="FRA SJÆLLAND TIL JYLLAND."/>
+<section class="info_text2">
+    <img class="highfive_art" src="HighFive_big.svg" alt="high five">
+    <div class="text_2">
+<Textbox header="LANDET OVER " text="FRA SJÆLLAND TIL JYLLAND.">
+    <p>Som frivillige hos os spiller det ingen rolle, hvor i landet du bor  vores tilbud er alle landsdækkende, og vores interne kommunikation foregår online. 
+Det ændrer dog ikke på, at vi har et utroligt nærværende, levende og støttende fællesskab blandt vores kollegaer!</p>
+</Textbox>
+</div>
+</section>
 
-<Textbox header="FAGLIGT FÆLLESSKAB" text="GODE GRUNDE TIL AT TILMELDE DIG NÆSTE INTROMØDE"/>
 
+<section class="info_text3">
+    <img class="mapDK_art" src="finalDK_map.svg" alt="DK map">
+<Textbox header="FAGLIGT FÆLLESSKAB" text="GODE GRUNDE TIL AT TILMELDE DIG NÆSTE INTROMØDE">
+   <ul>
+    <li>Skab meningsfulde forbindelser og bliv en del af et varmt og fagligt fællesskab af dedikerede frivillige fra hele landet.</li>
+    <li>Du får et meningsfuldt og givende frivilligjob, hvor du på nært hold følger den forandring, du bidrager til for den enkelte familie.</li>
+    <li>Du bliver støttet og guidet i din opstart af din personlige mentor, og du kan altid søge råd hos kompetente og erfarne ledere og kollegaer.</li>
+    <li>Du har som rådgiver et fleksibelt skema, som du selv er med til at tilrettelægge.</li>
+    <li>Du får mulighed for at udvikle dine empatiske og faglige færdigheder og et plus på CV'et</li>
+   </ul>
+</Textbox>
+</section>
 
 
 
@@ -26,4 +51,181 @@ import Textbox from "../components/Textbox.astro"
     font-size: var( --pmsize);
 
 }
+
+ul{
+    padding-left: 2rem;
+    color: var( --secondary);
+}
+
+li{
+       padding-top: 1rem;
+    font-family: var( --h3p);
+    font-size: var( --pmsize);
+}
+
+.hugging_art{
+    height: auto;
+    width: 50%;
+    margin-left: 11rem;
+
+ 
+  
+}
+
+.highfive_art{
+     height: 100%;
+    width: auto;
+padding-left: 7.5rem;
+padding-bottom: 1rem;
+}
+
+.mapDK_art{
+      height: 20rem;
+    width: auto;
+    padding-left: 4rem;
+}
+
+.info_text1{
+    padding-bottom: 4rem;
+}
+
+.text_1{
+    grid-row: 1;
+}
+
+.yellow_box{
+
+    background-color: var(--accent1);
+     border-radius: 90px 0px 0 90px;
+     margin-right: -1rem;
+     margin-top: -50rem;
+     
+}
+
+.yellow-grid{
+display: grid;
+  grid-template-columns: 1fr;
+}
+
+.info_text3{
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+}
+
+
+
+
+@media (min-width: 900px) {
+
+
+.info_text1{
+    padding-bottom: 3rem;
+     padding-left: 4rem;
+    padding-right: 3rem;
+
+}
+
+.text_1{
+grid-column: 1 / -1;
+  grid-row: 1/3;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+
+.text_1{
+    padding-left: 2rem;
+}
+
+
+.yellow_box{
+    grid-column: 1 / -1;
+    grid-row: 2/3;
+    background-color: var(--accent1);
+     border-radius: 90px 0px 0 90px;
+     margin-right: -3rem;
+     margin-bottom: -2rem;
+     margin-top: 0;
+     
+}
+
+
+.hugging_art{
+    height: auto;
+    width: 80%;
+margin-left: 0;
+  
+}
+
+.yellow-grid{
+display: grid;
+  grid-template-rows: 167px 1fr;
+  grid-template-columns: 1fr;
+}
+
+
+
+.info_text2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 4rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    padding-top: 6rem;
+}
+
+.text_2{
+    grid-column: 1/2;
+}
+
+.highfive_art{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 24rem;
+  width: auto;
+  padding-left: 13.5rem;
+  padding-bottom: 4rem;
+}
+
+
+
+.info_text3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mapDK_art{
+      height: auto;
+    width: 80%;
+    padding-top: 4rem;
+}
+
+
+
+ p{
+    padding-top: 1rem;
+    font-size: var( --pdsize);
+
+}
+
+
+li{
+       padding-top: 1rem;
+    font-size: var( --pdsize);
+}
+
+}
+
+@media (max-width: 1440px) {
+
+    .info_text1{
+
+    padding-right: 0rem;
+    
+
+}
+}
+
+
+
+
 </style>
